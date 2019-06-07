@@ -12,6 +12,7 @@
   flex-direction: column;
   width: fit-content;
   margin: auto;
+  margin-top: 50px;
 }
 
 h1, #calc {

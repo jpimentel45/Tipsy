@@ -21,9 +21,6 @@ function tipsyCalc() {
 
   //Calculate
   var total = (bill * tipsy) / binch;
-  console.log(total);
-  console.log(bill);
-  console.log(fullTotal);
   //round 2 decimals
   total = Math.round(total * 100) / 100;
   //2 digits after decimal point
