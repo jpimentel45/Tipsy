@@ -16,7 +16,7 @@ function tipsyCalc() {
     binch = 1;
     document.getElementById("totalTip").style.display = "none";
   } else {
-    document.getElementById("totalTip").style.display = "inherit";
+    document.getElementById("totalTip").style.display = "flex";
   }
 
   //Calculate
@@ -35,7 +35,7 @@ function tipsyCalc() {
   var fullTotal = bill / binch + total;
   fullTotal = fullTotal.toFixed(2);
   //show tip amount
-  document.getElementById("totalTip").style.display = "inherit";
+  document.getElementById("totalTip").style.display = "flex";
   //inside of element dynamically inpur tip
   document.getElementById("tip").innerHTML = total;
   document.getElementById("full").innerHTML = fullTotal;
