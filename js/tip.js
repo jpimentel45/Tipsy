@@ -8,7 +8,15 @@ function tipsyCalc() {
   if (bill === "" || tipsy === "") {
     document.getElementById("error-message").style.display = "block";
     return;
-  } else if (bill != "" || tipsy === "") {
+  } else {
+    document.getElementById("error-message").style.display = "none";
+  }
+  //check if bill is <=0
+  if (bill === "" || bill <= 0) {
+    bill = 0;
+    document.getElementById("error-message").style.display = "block";
+    return;
+  } else {
     document.getElementById("error-message").style.display = "none";
   }
   //Check value to number of people
@@ -41,6 +49,8 @@ function tipsyCalc() {
 document.getElementById("totalTip").style.display = "none";
 
 //click function
+//this will automatically start grabbing input good for me maybe not for others better to have event on buttom click
+//window.addEventListener("click", tipsyCalc, false);
 document.getElementById("calculate").onclick = function() {
   tipsyCalc();
 };
