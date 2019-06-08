@@ -25,7 +25,7 @@ function tipsyCalc() {
   total = Math.round(total * 100) / 100;
   //2 digits after decimal point
   total = total.toFixed(2);
-  bill = parseInt(bill);
+  bill = parseFloat(bill);
   binch = parseInt(binch);
   total = parseFloat(total);
   //try splitting bill total, and add tip
